@@ -11,7 +11,7 @@ const PostDetail = () => {
         fetch(url)
         .then (res => res.json())
         .then(data => setPost(data));
-    },[])
+    },[id])
     useEffect(()=> {
         const url = `https://jsonplaceholder.typicode.com/comments?postid=${id}`;
         fetch(url)
