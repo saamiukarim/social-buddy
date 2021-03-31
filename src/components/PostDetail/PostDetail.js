@@ -17,7 +17,7 @@ const PostDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setComments(data))
-    },[])
+    },[id])
     return (
         <div>
             <h3> This is :{id}</h3>
